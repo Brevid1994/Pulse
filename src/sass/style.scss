@@ -1,10 +1,6 @@
-@import 'variables';
+@import '_variables';
 
 * {
-    margin: 0;
-}
-
-h1 {
-    font-size: 50px;
-    font-weight: $text_s;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
