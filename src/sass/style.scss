@@ -1,6 +1,9 @@
+@import 'base/variables';
+
+
 * {
     margin: 0 auto;
-    font-family: 'MuseoModerno', sans-serif;
+    font-family: $main_font;
 }
 
 .container {
@@ -8,7 +11,6 @@
     margin: 0 auto;
 }
 
-@import 'base/variables';
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/button';

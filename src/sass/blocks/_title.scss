@@ -4,4 +4,8 @@
     line-height: 100%;
     text-align: center;
     color: $second_text_color;
+
+    @media screen and (max-width: $laptop) {
+        font-size: 45px;
+    }
 }

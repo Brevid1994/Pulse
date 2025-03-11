@@ -6,7 +6,11 @@
         padding-top: 60px;
         display: flex;
         justify-content: space-between;
-        // gap: 80px;
+
+        @media screen and (max-width: $laptop) {
+            flex-direction: column;
+            row-gap: 25px;
+        }
     }
 
     &__item {
@@ -17,6 +21,10 @@
             display: block;
             margin: 0 auto;
         }
+
+        @media screen and (max-width: $laptop) {
+            width: 95%;
+        }
     }
 
     &__subtitle {
@@ -25,6 +33,11 @@
         font-size: 18px;
         text-align: center;
         color: $second_text_color;
+
+        @media screen and (max-width: $laptop) {
+            margin-top: 0;
+            font-size: 24px;
+        }
     }
 
     &__text {
@@ -34,6 +47,11 @@
         line-height: 129%;
         text-align: center;
         color: $second_text_color;
+
+        @media screen and (max-width: $laptop) {
+            margin-top: 5px;
+            font-size: 20px;
+        }
 
         span {
             text-decoration: underline;

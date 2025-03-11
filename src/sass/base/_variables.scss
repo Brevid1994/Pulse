@@ -1,8 +1,27 @@
+// text variablea
+
+// font-family
+$main_font: 'MuseoModerno', sans-serif;
+
+// font-weight
 $text_s: 300;
 $text_m: 500;
 $text_b: 700;
 $text_reg: 400;
 
+
+
+// color variables
+
+//text-color
 $main_text_color: #ffffff;
 $second_text_color: #0d0d0d;
+
+// background color
 $main_color: #c70101;
+
+// devices
+
+// mobile
+$mobile: 576px;
+$laptop: 768px;

@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: $mobile) {
+        justify-content: center;
+        align-items: center;
+    }
+
     &__logo {
         width: 250px;
 
@@ -21,6 +26,20 @@
             display: block;
             font-size: 18px;
         }
+
+        // @media screen and (max-width: $laptop) {
+        //     display: none;
+        // }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @media screen and (max-width: $laptop) {
+            display: none;
+        }
     }
 
     &__phone {
@@ -35,9 +54,4 @@
         }
     }
 
-    &__contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }
 }

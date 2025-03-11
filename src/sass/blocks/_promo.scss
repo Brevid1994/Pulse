@@ -3,11 +3,19 @@
     padding: 21px 0 93px 0;
     background: url(../../img/Main_bg.jpg) center (center / cover) no-repeat;
 
+    @media screen and (max-width: $laptop) {
+        min-height: 100%;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 91px;
+
+        @media screen and (max-width: $laptop) {
+            margin-top: 20%;
+        }
     }
 
     &__header {
@@ -16,6 +24,13 @@
         text-transform: uppercase;
         color: $main_text_color;
         line-height: 42px;
+
+        @media screen and (max-width: $laptop) {
+            font-size: 55px;
+            text-align: center;
+            line-height: normal;
+        }
+
     }
 
     &__subheader {
@@ -25,6 +40,12 @@
         text-transform: uppercase;
         color: $main_text_color;
         line-height: 24px;
+
+        @media screen and (max-width: $laptop) {
+            margin-top: 15%;
+            font-size: 26px;
+            text-align: center;
+        }
     }
 
     &__icons {
@@ -32,6 +53,10 @@
         width: 425px;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: $laptop) {
+            justify-content: space-around;
+        }
     }
 
     &__icon {
@@ -41,6 +66,11 @@
         font-size: 14px;
         text-align: center;
         color: $main_text_color;
+
+        @media screen and (max-width: $mobile) {
+            width: 30%;
+            font-size: 16px;
+        }
 
         img {
             display: block;
@@ -55,10 +85,20 @@
         font-size: 16px;
         color: $main_text_color;
 
+        @media screen and (max-width: $laptop) {
+            margin-top: 20px;
+        }
+
         a {
             text-decoration: underline;
             color: $main_text_color;
             text-transform: uppercase;
+        }
+    }
+
+    button {
+        @media screen and (max-width: $laptop) {
+            margin-top: 18%;
         }
     }
 }
