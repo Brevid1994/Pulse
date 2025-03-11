@@ -1,0 +1,11 @@
+.button {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: $main_color;
+    border: none;
+    font-size: 12px;
+    font-weight: $text_m;
+    text-transform: uppercase;
+    color: $main_text_color;
+}
