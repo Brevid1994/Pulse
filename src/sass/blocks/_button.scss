@@ -8,4 +8,11 @@
     font-weight: $text_m;
     text-transform: uppercase;
     color: $main_text_color;
+
+    &_main {
+        margin-top: 65px;
+        width: 303px;
+        height: 54px;
+        font-size: 14px;
+    }
 }
