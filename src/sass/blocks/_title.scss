@@ -3,9 +3,21 @@
     font-size: 30px;
     line-height: 100%;
     text-align: center;
+    text-transform: uppercase;
     color: $second_text_color;
 
     @media screen and (max-width: $laptop) {
         font-size: 45px;
+    }
+
+    &_left {
+        font-size: 36px;
+        text-align: left;
+        color: $main_text_color;
+
+        @media screen and (max-width: $laptop) {
+            text-align: center;
+            font-size: 36px;
+        }
     }
 }

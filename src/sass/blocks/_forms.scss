@@ -1,0 +1,27 @@
+.feed-form {
+    margin: 36px 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    input {
+        height: 50px;
+        border-radius: 5px;
+        background-color: $main_text_color;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        font-weight: $text_s;
+        font-size: 14px;
+        color: $input_color;
+
+        &:nth-child(3) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media screen and (max-width: $laptop) {
+        margin: 50px auto;
+        width: 60%;
+    }
+}
