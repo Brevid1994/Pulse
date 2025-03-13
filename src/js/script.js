@@ -15,6 +15,16 @@ $(document).ready(function () {
                     dots: true,
                     arrows: false,
                 }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                    arrows: false,
+                    autoplay: true,
+                    mobileFirst: true,
+                }
             }
         ],
     }

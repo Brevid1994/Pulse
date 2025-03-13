@@ -4,6 +4,14 @@
     &__inner {
         position: relative;
         width: 750px;
+
+        div {
+            img {
+                @media screen and (max-width: $mobile) {
+                    width: 100vw;
+                }
+            }
+        }
     }
 
     .slick-prev,

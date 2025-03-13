@@ -13,6 +13,12 @@
         display: flex;
         justify-content: space-between;
         align-items: start;
+
+        @media screen and (max-width: $laptop) {
+            padding: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__avatar {
@@ -20,9 +26,11 @@
         height: 170px;
         margin-right: 60px;
 
+        @media screen and (max-width: $mobile) {
+            display: block;
+            margin: 0;
+        }
     }
-
-    &__block {}
 
     &__user {
         font-weight: $text_b;
