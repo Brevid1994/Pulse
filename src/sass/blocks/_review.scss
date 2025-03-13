@@ -1,0 +1,47 @@
+.review {
+    min-height: 920px;
+
+    &__blocks {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wrapper {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__avatar {
+        width: 170px;
+        height: 170px;
+        margin-right: 60px;
+
+    }
+
+    &__block {}
+
+    &__user {
+        font-weight: $text_b;
+        font-size: 18px;
+        color: $second_text_color;
+    }
+
+    &__user-status {
+        font-weight: $text_m;
+        font-size: 14px;
+        color: #646464;
+    }
+
+    &__user-feedback {
+        margin-top: 10px;
+        font-weight: $text_s;
+        font-size: 16px;
+        color: $second_text_color;
+        line-height: 1.5em;
+    }
+
+}
