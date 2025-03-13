@@ -47,10 +47,13 @@
 
     &__content {
         margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
+        display: none;
         flex-wrap: wrap;
-        row-gap: 12px;
+        gap: 12px;
+
+        &_active {
+            display: flex;
+        }
     }
 
     &-item {
@@ -61,6 +64,7 @@
         width: 303px;
         min-height: 442px;
         border: 2px solid #e8e8e8;
+        overflow: hidden;
 
         &__img {
             display: block;
@@ -86,6 +90,7 @@
         }
 
         &__link {
+            display: block;
             margin-top: 17px;
             font-weight: $text_m;
             font-size: 16px;
@@ -95,6 +100,20 @@
 
             &:hover {
                 color: $main_color;
+            }
+        }
+
+        &__back {
+            display: block;
+            margin-top: 17px;
+            font-weight: $text_m;
+            font-size: 16px;
+            text-decoration: underline;
+            text-align: center;
+            color: $main_color;
+
+            &:hover {
+                color: pink;
             }
         }
 
@@ -124,6 +143,62 @@
             font-weight: $text_b;
             font-size: 20px;
             color: #050505;
+        }
+
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(100%);
+            transition: 0.5 all;
+
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+
+        &__list {
+            position: relative;
+            width: 50%;
+            transform: translateX(0%);
+            margin-left: 20px;
+            padding-right: 20px;
+            transition: 0.5s all;
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+
+            li {
+                position: relative;
+                font-weight: $text_s;
+                font-size: 14px;
+                color: #555;
+                margin-bottom: 20px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: -14px;
+                    top: 7px;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main_color;
+                }
+            }
+
+            a {
+                margin-top: 70px;
+            }
         }
     }
 }
