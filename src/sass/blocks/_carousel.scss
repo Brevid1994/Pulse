@@ -5,12 +5,8 @@
         position: relative;
         width: 750px;
 
-        div {
-            img {
-                @media screen and (max-width: $mobile) {
-                    width: 100vw;
-                }
-            }
+        @media screen and (max-width: $laptop) {
+            width: 80%;
         }
     }
 

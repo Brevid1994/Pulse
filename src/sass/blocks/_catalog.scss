@@ -10,6 +10,11 @@
         margin-bottom: 0;
         padding-left: 0;
         list-style-type: none;
+
+        @media screen and (max-width: $laptop) {
+            flex-direction: column;
+            ;
+        }
     }
 
     &__tab {
@@ -42,6 +47,11 @@
             background-color: $main_color;
             color: $main_text_color;
             border: none;
+        }
+
+        @media screen and (max-width: $laptop) {
+            width: 80%;
+            margin-top: 10px;
         }
     }
 
