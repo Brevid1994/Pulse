@@ -89,5 +89,52 @@ $(document).ready(function () {
     validateForm('#consultation form');
     validateForm('#order form');
 
+    $('input[name=phone]').mask('+7 (999) 999-9999');
+
+
+    $('form').submit(function (e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+
+    // pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 900) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+
+    })
+
+    $("a").on('click', function () {
+
+        if (this.hash !== "") {
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+
 });
 
