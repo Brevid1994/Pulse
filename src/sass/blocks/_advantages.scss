@@ -58,4 +58,16 @@
             color: #f00;
         }
     }
+
+    &__img_animated-pulse {
+        animation: heartbeat 1s infinite;
+    }
+
+    &__img_animated-run {
+        animation: run 1.5s infinite;
+    }
+
+    &__img_animated-lr {
+        animation: left_right 1.5s infinite;
+    }
 }
